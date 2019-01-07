@@ -1,0 +1,21 @@
+{
+  "name": "angtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "angular-momentjs": "^0.2.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moment": "^2.23.0",
+    "mongoose": "^5.4.0",
+    "particle-api-js": "^7.2.3",
+    "socket.io": "^2.2.0"
+  }
+}

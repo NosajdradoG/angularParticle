@@ -1,0 +1,36 @@
+<div class="intro" style="display: flex; justify-content: center;">
+  <h1>{{monDevice.name}}  -  {{monDevice.id}}</h1>
+  <!-- <p>{{monDevice}}</p> -->
+</div>
+<div id="map_div" style="height: 240px; width: 50%; margin-left: 25%"></div>
+<hr>
+
+<div class="global" style="display: flex; justify-content: space-evenly;">
+
+  <div class="chartJS">
+    <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-options="options" chart-click="onClick" width="800"></canvas> 
+  </div>
+  <div class="events">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">name</th>
+          <th scope="col">data</th>
+          <th scope="col">published_at</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="s in mesSensors">
+          <th scope="row">{{$index}}</th>
+          <td>{{s.name}}</td>
+          <td>{{s.data}}</td>
+          <td>{{s.published_at| date : 'dd-MM-yy HH:mm:ss ' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
